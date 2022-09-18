@@ -1,0 +1,18 @@
+[
+  {
+    "uid": "FFSUYFJTR",
+    "institution_uid": "ESGVTPSMZ",
+    "name": "phone",
+    "value": "+596 696 96 50 07",
+    "created_at": "2022-09-17 19:59:03",
+    "edited_at": "2022-09-17 19:59:42"
+  },
+  {
+    "uid": "VVYQDGENW",
+    "institution_uid": "ESGVTPSMZ",
+    "name": "email",
+    "value": "info@cfa-dndc.fr",
+    "created_at": "2022-09-17 19:56:18",
+    "edited_at": "2022-09-17 19:56:18"
+  }
+]

@@ -1,1 +1,15 @@
-[{"uid":"ERCRZTWQW","institution_uid":"ESGVTPSMZ","name":"CFA Num\u00e9rique Martinique","address1":"Centre d\u2019affaires Dillon Valmeni\u00e8re","address2":"","address3":"","zip":"97200","city":"Fort-de-France","country":"MQ","created_at":"2022-09-17 20:02:02","edited_at":"2022-09-17 20:02:02"}]
+[
+  {
+    "uid": "ERCRZTWQW",
+    "institution_uid": "ESGVTPSMZ",
+    "name": "CFA Num\u00e9rique Martinique",
+    "address1": "Centre d\u2019affaires Dillon Valmeni\u00e8re",
+    "address2": "",
+    "address3": "",
+    "zip": "97200",
+    "city": "Fort-de-France",
+    "country": "MQ",
+    "created_at": "2022-09-17 20:02:02",
+    "edited_at": "2022-09-17 20:02:02"
+  }
+]

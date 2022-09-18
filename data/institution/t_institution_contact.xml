@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <pma:structure_schemas>
+        <pma:database name="formation-opendata" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="t_institution_contact">
+                CREATE TABLE `t_institution_contact` (
+                  `uid` char(9) NOT NULL,
+                  `institution_uid` char(9) NOT NULL,
+                  `name` enum('email','phone') NOT NULL,
+                  `value` varchar(50) NOT NULL,
+                  `created_at` datetime NOT NULL,
+                  `edited_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+                  PRIMARY KEY (`uid`),
+                  KEY `institution` (`institution_uid`),
+                  CONSTRAINT `t_institution_contact_ibfk_1` FOREIGN KEY (`institution_uid`) REFERENCES `t_institution` (`uid`) ON DELETE CASCADE
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+    <database name="formation-opendata">
+        <table name="t_institution_contact">
+            <column name="uid">FFSUYFJTR</column>
+            <column name="institution_uid">ESGVTPSMZ</column>
+            <column name="name">phone</column>
+            <column name="value">+596 696 96 50 07</column>
+            <column name="created_at">2022-09-17 19:59:03</column>
+            <column name="edited_at">2022-09-17 19:59:42</column>
+        </table>
+        <table name="t_institution_contact">
+            <column name="uid">VVYQDGENW</column>
+            <column name="institution_uid">ESGVTPSMZ</column>
+            <column name="name">email</column>
+            <column name="value">info@cfa-dndc.fr</column>
+            <column name="created_at">2022-09-17 19:56:18</column>
+            <column name="edited_at">2022-09-17 19:56:18</column>
+        </table>
+    </database>
+</pma_xml_export>
