@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <pma:structure_schemas>
+        <pma:database name="formation-opendata" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="t_institution">
+                CREATE TABLE `t_institution` (
+                  `uid` char(9) NOT NULL,
+                  `name` varchar(100) NOT NULL,
+                  `slug` varchar(110) NOT NULL,
+                  `url` varchar(255) NOT NULL,
+                  `created_at` datetime NOT NULL,
+                  `edited_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+                  PRIMARY KEY (`uid`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+    <database name="formation-opendata">
+        <table name="t_institution">
+            <column name="uid">BJEFWLQRU</column>
+            <column name="name">AECD - Association pour l'Education Cognitive et le Développement</column>
+            <column name="slug">aecd</column>
+            <column name="url">https://www.aecd.fr/ultramarin/</column>
+            <column name="created_at">2022-09-17 19:35:37</column>
+            <column name="edited_at">2022-09-17 19:40:16</column>
+        </table>
+        <table name="t_institution">
+            <column name="uid">ESGVTPSMZ</column>
+            <column name="name">DNDC - DIGITAL NUMÉRIQUE DOMOTIQUE COMMUNICATION - OF / CFA</column>
+            <column name="slug">cfa-numerique</column>
+            <column name="url">https://cfanumeriquemartinique.com/</column>
+            <column name="created_at">2022-09-17 19:46:41</column>
+            <column name="edited_at">2022-09-17 19:46:41</column>
+        </table>
+    </database>
+</pma_xml_export>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <pma:structure_schemas>
+        <pma:database name="formation-opendata" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="t_formation">
+                CREATE TABLE `t_formation` (
+                  `uid` char(9) NOT NULL,
+                  `degree_uid` char(9) NOT NULL,
+                  `name` varchar(100) NOT NULL,
+                  `duration` varchar(30) NOT NULL,
+                  `remote` tinyint(1) NOT NULL DEFAULT 0,
+                  `learning` tinyint(1) NOT NULL DEFAULT 0,
+                  `alternation` tinyint(1) NOT NULL DEFAULT 0,
+                  `remunerated` tinyint(1) NOT NULL DEFAULT 0,
+                  `prerequisites` longtext DEFAULT NULL,
+                  `created_at` datetime NOT NULL,
+                  `edited_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+                  PRIMARY KEY (`uid`),
+                  KEY `degree` (`degree_uid`),
+                  CONSTRAINT `t_formation_ibfk_1` FOREIGN KEY (`degree_uid`) REFERENCES `t_degree` (`uid`) ON DELETE CASCADE
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <database name="formation-opendata">
+        <table name="t_formation">
+            <column name="uid">WCKPPNPHK</column>
+            <column name="degree_uid">DTPGJVTAA</column>
+            <column name="name">DÉVELOPPEUR WEB &amp; MOBILE</column>
+            <column name="duration">512h, entreprise : 728h</column>
+            <column name="remote">0</column>
+            <column name="learning">0</column>
+            <column name="alternation">1</column>
+            <column name="remunerated">1</column>
+            <column name="prerequisites">Titulaire diplôme CAP, BEP, Classe de 1re – terminale ou équivalent. Utilisation courante d’un ordinateur, d’Internet et des outils bureautiques.</column>
+            <column name="created_at">2022-09-17 20:07:52</column>
+            <column name="edited_at">2022-09-17 20:07:52</column>
+        </table>
+    </database>
+</pma_xml_export>
