@@ -1,0 +1,29 @@
+[
+  {
+    "uid": "DTPGJVTAA",
+    "name": "Titre Professionnel Developpeur (se) Web et Web mobile",
+    "slug": "tp-dwwm",
+    "level": "Niveau 5 \/ Bac+2",
+    "url": "https:\/\/www.banque.di.afpa.fr\/EspaceEmployeursCandidatsActeurs\/EGPResultat.aspx?ct=01280m03&cd=&cr=developpeur%20web&type=t",
+    "created_at": "2022-09-17 19:44:16",
+    "edited_at": "2022-09-17 19:49:13"
+  },
+  {
+    "uid": "KQRXPJVNE",
+    "name": "Titre Professionnel Concepteur Designer UI",
+    "slug": "tp-cdui",
+    "level": "Niveau 6 \/ Bac+3",
+    "url": "https:\/\/www.banque.di.afpa.fr\/EspaceEmployeursCandidatsActeurs\/EGPResultat.aspx?cr=developpeur%20web&cd=&ct=01411m01&type=t",
+    "created_at": "2022-09-17 19:52:33",
+    "edited_at": "2022-09-17 19:52:33"
+  },
+  {
+    "uid": "RAPVBYVDN",
+    "name": "Titre Professionnel Concepteur d\u00e9veloppeur d\u2019applications",
+    "slug": "tp-cda",
+    "level": "Niveau 6 \/ Bac+3",
+    "url": "https:\/\/www.banque.di.afpa.fr\/EspaceEmployeursCandidatsActeurs\/EGPResultat.aspx?cr=developpeur%20web&cd=&ct=01281m03&type=t",
+    "created_at": "2022-09-17 19:51:01",
+    "edited_at": "2022-09-17 19:52:59"
+  }
+]

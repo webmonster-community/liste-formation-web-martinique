@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <pma:structure_schemas>
+        <pma:database name="formation-opendata" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="t_degree">
+                CREATE TABLE `t_degree` (
+                  `uid` char(9) NOT NULL,
+                  `name` varchar(100) NOT NULL,
+                  `slug` varchar(110) NOT NULL,
+                  `level` varchar(50) NOT NULL,
+                  `url` varchar(255) NOT NULL,
+                  `created_at` datetime NOT NULL,
+                  `edited_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+                  PRIMARY KEY (`uid`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+    <database name="formation-opendata">
+        <table name="t_degree">
+            <column name="uid">DTPGJVTAA</column>
+            <column name="name">Titre Professionnel Developpeur (se) Web et Web mobile</column>
+            <column name="slug">tp-dwwm</column>
+            <column name="level">Niveau 5 / Bac+2</column>
+            <column name="url">https://www.banque.di.afpa.fr/EspaceEmployeursCandidatsActeurs/EGPResultat.aspx?ct=01280m03&amp;cd=&amp;cr=developpeur%20web&amp;type=t</column>
+            <column name="created_at">2022-09-17 19:44:16</column>
+            <column name="edited_at">2022-09-17 19:49:13</column>
+        </table>
+        <table name="t_degree">
+            <column name="uid">KQRXPJVNE</column>
+            <column name="name">Titre Professionnel Concepteur Designer UI</column>
+            <column name="slug">tp-cdui</column>
+            <column name="level">Niveau 6 / Bac+3</column>
+            <column name="url">https://www.banque.di.afpa.fr/EspaceEmployeursCandidatsActeurs/EGPResultat.aspx?cr=developpeur%20web&amp;cd=&amp;ct=01411m01&amp;type=t</column>
+            <column name="created_at">2022-09-17 19:52:33</column>
+            <column name="edited_at">2022-09-17 19:52:33</column>
+        </table>
+        <table name="t_degree">
+            <column name="uid">RAPVBYVDN</column>
+            <column name="name">Titre Professionnel Concepteur développeur d’applications</column>
+            <column name="slug">tp-cda</column>
+            <column name="level">Niveau 6 / Bac+3</column>
+            <column name="url">https://www.banque.di.afpa.fr/EspaceEmployeursCandidatsActeurs/EGPResultat.aspx?cr=developpeur%20web&amp;cd=&amp;ct=01281m03&amp;type=t</column>
+            <column name="created_at">2022-09-17 19:51:01</column>
+            <column name="edited_at">2022-09-17 19:52:59</column>
+        </table>
+    </database>
+</pma_xml_export>
