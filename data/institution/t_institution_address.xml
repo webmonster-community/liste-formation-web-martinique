@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <pma:structure_schemas>
+        <pma:database name="formation-opendata" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="t_institution_address">
+                CREATE TABLE `t_institution_address` (
+                  `uid` char(9) NOT NULL,
+                  `institution_uid` char(9) NOT NULL,
+                  `name` varchar(100) NOT NULL,
+                  `address1` varchar(100) NOT NULL,
+                  `address2` varchar(100) NOT NULL,
+                  `address3` varchar(100) NOT NULL,
+                  `zip` char(5) NOT NULL,
+                  `city` varchar(45) NOT NULL,
+                  `country` char(2) NOT NULL,
+                  `created_at` datetime NOT NULL,
+                  `edited_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+                  PRIMARY KEY (`uid`),
+                  KEY `institution` (`institution_uid`),
+                  CONSTRAINT `t_institution_address_ibfk_1` FOREIGN KEY (`institution_uid`) REFERENCES `t_institution` (`uid`) ON DELETE CASCADE
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+    <database name="formation-opendata">
+        <table name="t_institution_address">
+            <column name="uid">ERCRZTWQW</column>
+            <column name="institution_uid">ESGVTPSMZ</column>
+            <column name="name">CFA Numérique Martinique</column>
+            <column name="address1">Centre d’affaires Dillon Valmenière</column>
+            <column name="address2"></column>
+            <column name="address3"></column>
+            <column name="zip">97200</column>
+            <column name="city">Fort-de-France</column>
+            <column name="country">MQ</column>
+            <column name="created_at">2022-09-17 20:02:02</column>
+            <column name="edited_at">2022-09-17 20:02:02</column>
+        </table>
+    </database>
+</pma_xml_export>
