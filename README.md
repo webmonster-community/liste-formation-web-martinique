@@ -45,4 +45,4 @@ Liste des organismes ou écoles de formation web en Martinique (972) disponible 
 
 ![img](https://jobboard.webmonster.tech/assets/images/webmonster/logo-dark.png)
 
-Visiter la communauté [Webmonster](https://discord.gg/XU4g5WfH4R) sur Discord.
+Visiter la communauté [Webmonster](https://discord.gg/8wRCMFVkm2) sur Discord.
